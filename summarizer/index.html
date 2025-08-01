@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF/Text Summarizer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Text & PDF Summarizer</h1>
+
+    <div class="input-area">
+      <label for="textInput">Paste Text Here:</label>
+      <textarea id="textInput" placeholder="Or leave empty and upload PDF instead..."></textarea>
+
+      <label for="pdfUpload">Or Upload PDF:</label>
+      <input type="file" id="pdfUpload" accept="application/pdf" />
+    </div>
+
+    <button id="summarizeBtn">Summarize</button>
+
+    <div id="loading" style="display:none;">⏳ Summarizing...</div>
+
+    <h2>Summary:</h2>
+    <div id="output"></div>
+  </div>
+</body>
+</html>
